@@ -1,1 +1,1 @@
-# bx24-template
+# bx24-serial-num
