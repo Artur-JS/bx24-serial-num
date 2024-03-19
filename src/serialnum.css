@@ -1,0 +1,95 @@
+* {
+    background-color: #EAEBE2;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-screen {
+    padding: 20px;
+}
+
+.title {
+    font-size: 15px;
+    font-family: "Blinker", sans-serif;
+    margin-bottom: 25px;
+}
+
+.id-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 30px;
+}
+
+.load-btn, .save-btn {
+    background-color: #BBED21;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #525C69;
+    font-family: "Blinker", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.load-btn:hover, .save-btn:hover {
+    background-color: #d2f95f;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.id-input, .serial-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    background-color: #fff; /* Установлен белый фон для текстовых полей */
+    color: #525C69;
+    font-family: "Blinker", sans-serif;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.id-input:focus, .serial-input:focus {
+    outline: 0;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: "Blinker", sans-serif;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px;
+    font-family: "Blinker", sans-serif;
+    padding-bottom: 15px;
+}
+
+ul li .serial-input {
+    margin-top: 5px; /* Разместить поле ввода под наименованием товара */
+    width: 100%; /* Полная ширина для лучшего визуального разграничения */
+}
+
+/* Медиа-запросы для адаптивности */
+@media (min-width: 768px) {
+    .id-input, .serial-input {
+        width: 60%;
+    }
+
+    .main-screen {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .id-block {
+        justify-content: start;
+    }
+}

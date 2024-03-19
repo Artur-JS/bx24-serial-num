@@ -1,7 +1,10 @@
 import React from 'react';
+import SerialNumUI from './SerialNumUI';
 
 const App = () => {
-  return <div>1234</div>;
+  return <div>
+    <SerialNumUI />
+  </div>;
 };
 
 export default App;
